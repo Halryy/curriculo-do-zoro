@@ -1,0 +1,236 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
+img {
+    background: linear-gradient(90deg,
+            rgba(255, 0, 0, 1) 0%,
+            rgba(255, 154, 0, 1) 10%,
+            rgba(208, 222, 33, 1) 20%,
+            rgba(79, 220, 74, 1) 30%,
+            rgba(63, 218, 216, 1) 40%,
+            rgba(47, 201, 226, 1) 50%,
+            rgba(28, 127, 238, 1) 60%,
+            rgba(95, 21, 242, 1) 70%,
+            rgba(186, 12, 248, 1) 80%,
+            rgba(251, 7, 217, 1) 90%,
+            rgba(255, 0, 0, 1) 100%);
+    background-size: 420% 420%;
+    z-index: 2;
+    border: 5px solid rgb(0, 0, 0);
+    animation: changeColor 2s infinite, gradient 2s infinite;
+}
+
+@-webkit-keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+@keyframes changeColor {
+    0% {
+        border: 3px solid rgba(255, 0, 0, 1)
+    }
+
+    10% {
+        border: 3px solid rgba(255, 154, 0, 1)
+    }
+
+    20% {
+        border: 3px solid rgba(208, 222, 33, 1)
+    }
+
+    30% {
+        border: 3px solid rgba(79, 220, 74, 1)
+    }
+
+    40% {
+        border: 3px solid rgba(63, 218, 216, 1)
+    }
+
+    50% {
+        border: 3px solid rgba(47, 201, 226, 1)
+    }
+
+    60% {
+        border: 3px solid rgba(28, 127, 238, 1)
+    }
+
+    70% {
+        border: 3px solid rgba(95, 21, 242, 1)
+    }
+
+    80% {
+        border: 3px solid rgba(186, 12, 248, 1)
+    }
+
+    90% {
+        border: 3px solid rgba(251, 7, 217, 1)
+    }
+
+    100% {
+        border: 3px solid rgba(255, 0, 0, 1)
+    }
+}
+
+
+.retrato {
+    width: 100%;
+    height: 150px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.caixamae {
+    width: 600px;
+    height: 700px;
+    border: 1px solid black;
+    background-color: #1E1E1E;
+    position: relative;
+}
+
+.nomedozoro {
+    width: 232px;
+    font-size: 30px;
+    font-family: "Comic Sans MS";
+    color: white;
+    text-decoration: underline;
+    background: linear-gradient(90deg,
+            rgba(255, 0, 0, 1) 0%,
+            rgba(255, 154, 0, 1) 10%,
+            rgba(208, 222, 33, 1) 20%,
+            rgba(79, 220, 74, 1) 30%,
+            rgba(63, 218, 216, 1) 40%,
+            rgba(47, 201, 226, 1) 50%,
+            rgba(28, 127, 238, 1) 60%,
+            rgba(95, 21, 242, 1) 70%,
+            rgba(186, 12, 248, 1) 80%,
+            rgba(251, 7, 217, 1) 90%,
+            rgba(255, 0, 0, 1) 100%);
+    background-size: 420% 420%;
+    -webkit-animation: gradient 3s ease infinite;
+    animation: gradient 3s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nascimento {
+    color: white;
+    font-family: "Comic Sans MS";
+    text-decoration: underline;
+    /* background-color: red; */
+    font-size: 16px;
+}
+
+.dataenome {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.sobremim {
+    display: flex;
+    color: white;
+    font-family: "Comic Sans MS";
+    align-self: flex-start;
+    padding-left: 0.5rem;
+}
+
+.sobremimtext {
+    color: white;
+    text-decoration: underline;
+    font-family: "Comic Sans MS";
+    text-align: justify;
+    font-size: 14px;
+    line-height: 1rem;
+    padding: 0.5rem;
+}
+
+.lista {
+    color: white;
+    font-family: "Comic Sans MS";
+    margin-left: 5%;
+    display: flex;
+    margin-top: 5%;
+    flex-direction: column;
+}
+
+.pontos {
+    text-decoration: underline;
+}
+
+.listanegativa {
+    color: white;
+    font-family: "Comic Sans MS";
+    margin-left: 5%;
+    display: flex;
+    margin-top: 5%;
+    flex-direction: column;
+}
+
+.experiencias {
+    color: white;
+    font-family: "Comic Sans MS";
+    margin-left: 5%;
+    display: flex;
+    margin-top: 5%;
+    flex-direction: column;
+}
+
+.spandebaixo {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+footer {
+    position: absolute;
+    top: 85%;
+}
+
+.footerd {
+    color: white;
+    font-family: "Comic Sans MS";
+    text-decoration: underline;
+}
