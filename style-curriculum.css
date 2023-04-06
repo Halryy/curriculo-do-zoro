@@ -149,6 +149,7 @@ img {
     background-size: 420% 420%;
     -webkit-animation: gradient 3s ease infinite;
     animation: gradient 3s ease infinite;
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
